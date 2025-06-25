@@ -1,0 +1,13 @@
+public class Checking {
+    public static boolean check(int[] arr){
+        for(int i=1;i<arr.length;i++){
+            if(arr[i-1]>arr[i]){
+                return false;
+            }
+        }
+        return true;
+    }
+    public static void main(String[] args) {
+        System.out.println(check(new int[] {10,2,3,4,5}));
+    }
+}
